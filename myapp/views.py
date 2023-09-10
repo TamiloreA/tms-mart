@@ -13,3 +13,6 @@ def about(request):
 def contact(request):
     # return HttpResponse('<h1>This is our contact page</h1>')
      return render(request, 'registration.html')
+ 
+def demo(request) : 
+    pass 
