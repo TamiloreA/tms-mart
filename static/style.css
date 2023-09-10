@@ -1,0 +1,55 @@
+body{
+    background-color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+
+.contact-us{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.contact-us h1{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input{
+    width: 380px;
+    height: 40px;
+    margin-bottom: 30px;
+    border-color: rgba(0,0,0,0.15);
+    padding: 0.5rem 1rem;
+}
+
+textarea{
+    width: 380px;
+    height: 100px;
+    text-align: top;
+    padding: 0.5rem 1rem;
+    margin-bottom: 30px;
+}
+
+.btn1{
+    width: 380px;
+    height: 40px;
+    background-color: #B1B6B8;
+    color: #000;
+    border: none;
+    transition: .5s ease;
+}
+
+.btn1:hover{
+    color: #fff;
+    background-color: #505457;
+    transition: 0.5s;
+    transform: scale(1.1);
+    transition: .5s ease;
+}
