@@ -19,14 +19,12 @@ def image(instance, filename):
     return 'uploads/{}/{}'.format(instance.title, filename)
 
 
-'''The Post model '''
-class Post(models.Model):
-    title = models.CharField(max_length=100)
-    excerpt = models.CharField(max_length=200)
+'''The Product model '''
+class Product(models.Model):
+    title = models.CharField(max_length=100, null=True)
     image_url = models.CharField(max_length=255, blank=True, null=True)
-    content = models.TextField(max_length=400)
-    slug = models.SlugField(unique=True)
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    content = models.TextField(max_length=400, null=True)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True)
     date = models.DateField(auto_now=True)
 
     def __str__(self):
